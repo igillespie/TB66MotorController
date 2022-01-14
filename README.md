@@ -12,7 +12,7 @@ Add the #include "TB66MotorController.h" to your .ino Arduino sketch.
 Here is how you initialize the motor controller:
 
 Paste this code (be sure to map your pin numbers to pins you are using in your project):
-
+~~~
 //Define the Pins for Motors
 //Motor 1
 int pinAIN1 = 11; //Direction
@@ -29,9 +29,11 @@ int pinSTBY = 7;
 
 
 TB66MotorController motorController(pinAIN1, pinAIN2, pinPWMA, pinBIN1, pinBIN2, pinPWMB, pinSTBY);
-
+~~~
 Here is how to drive the motors:
 
+~~~
 //Drive both motors CW, full speed
-'motorController.motorDrive(MOTOR_A, MOTOR_FORWARD, 255);'
-'motorController.motorDrive(MOTOR_B, MOTOR_FORWARD, 255);'
+motorController.motorDrive(MOTOR_A, MOTOR_FORWARD, 255);
+motorController.motorDrive(MOTOR_B, MOTOR_FORWARD, 255);
+~~~
