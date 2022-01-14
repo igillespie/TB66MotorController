@@ -31,7 +31,10 @@ int pinSTBY = 7;
 TB66MotorController motorController(pinAIN1, pinAIN2, pinPWMA, pinBIN1, pinBIN2, pinPWMB, pinSTBY);
 ~~~
 Here is how to drive the motors:
-
+~~~
+//be sure to call setup before you try to make the motors move
+motorController.setup();
+~~~
 ~~~
 //Drive both motors CW, full speed
 motorController.motorDrive(MOTOR_A, MOTOR_FORWARD, 255);
