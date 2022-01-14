@@ -27,7 +27,7 @@ int pinPWMB = 5; //Speed
 //Standby
 int pinSTBY = 7;
 
-
+//initialize the controller, put this above your setup() function
 TB66MotorController motorController(pinAIN1, pinAIN2, pinPWMA, pinBIN1, pinBIN2, pinPWMB, pinSTBY);
 ~~~
 Here is how to drive the motors:
