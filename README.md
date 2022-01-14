@@ -1,6 +1,6 @@
-# Welcome to GitHub
+# Welcome
 
-Simple c++ and header file written for use in Arduino projects.
+Simple c++ and header file written for use in Arduino projects to control motors using the TB6612 motor driver. Code inspired from the SparkFun example.
 
 
 
